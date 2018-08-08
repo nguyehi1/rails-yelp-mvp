@@ -31,3 +31,7 @@
  @import "layouts/index";
  @import "components/index";
  @import "pages/index";
+
+body {
+  padding: 0 30px;
+}

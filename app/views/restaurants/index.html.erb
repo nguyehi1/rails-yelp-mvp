@@ -1,0 +1,16 @@
+<h1>Restaurants Listing</h1>
+
+  <h3><% @restaurants.each do |restaurant| %></h3>
+  <h3><%= restaurant.name %></h3>
+  <ul>
+    <li><%= restaurant.address %></li>
+    <li><%= restaurant.phone_number %></li>
+    <li><%= restaurant.category %></li>
+  </ul>
+
+  <%= link_to 'Show restaurant', restaurant_path(restaurant) %> |
+  <%= link_to 'Edit exiting restaurant', edit_restaurant_path(restaurant) %>
+
+  <% end %>
+
+  <%= link_to 'Add a new restaurant', new_restaurant_path %>
